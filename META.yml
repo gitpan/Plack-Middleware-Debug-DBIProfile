@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.102341, CPAN::Meta::Converter version 2.101610'
+generated_by: 'Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.101610'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,4 +29,4 @@ requires:
 resources:
   homepage: http://github.com/timbunce/Plack--Middleware--Debug--DBIProfile/tree
   repository: git://github.com/timbunce/Plack--Middleware--Debug--DBIProfile.git
-version: 0.101
+version: 0.102

@@ -1,6 +1,6 @@
 package Plack::Middleware::Debug::DBIProfile;
 BEGIN {
-  $Plack::Middleware::Debug::DBIProfile::VERSION = '0.101';
+  $Plack::Middleware::Debug::DBIProfile::VERSION = '0.102';
 }
 
 use 5.008;
@@ -76,7 +76,10 @@ sub _set_profile_on_all_dbi_handles {
         : undef;
 
     # for any existing handles
-    DBI->visit_handles(sub { shift->{Profile} = $DBI::shared_profile });
+    DBI->visit_handles(sub {
+        shift->{Profile} = $DBI::shared_profile;
+        return 1; # keep going to visit all
+    });
 
     return $DBI::shared_profile;
 }
@@ -91,7 +94,7 @@ Plack::Middleware::Debug::DBIProfile - DBI::Profile panel
 
 =head1 VERSION
 
-version 0.101
+version 0.102
 
 =head1 SYNOPSIS
 

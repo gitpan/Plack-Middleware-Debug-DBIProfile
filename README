@@ -2,7 +2,7 @@ NAME
     Plack::Middleware::Debug::DBIProfile - DBI::Profile panel
 
 VERSION
-    version 0.101
+    version 0.102
 
 SYNOPSIS
         enable 'Debug::DBIProfile'

@@ -4,7 +4,7 @@
       "Tim Bunce <Tim.Bunce@pobox.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102341, CPAN::Meta::Converter version 2.101610",
+   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.101610",
    "license" : [
       "perl_5"
    ],
@@ -52,6 +52,6 @@
          "web" : "http://github.com/timbunce/Plack--Middleware--Debug--DBIProfile/tree"
       }
    },
-   "version" : "0.101"
+   "version" : "0.102"
 }
 
